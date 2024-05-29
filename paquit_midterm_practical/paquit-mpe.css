@@ -3,6 +3,8 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all ease;
+    transition-duration: 0.6s ;
 }
 body {
     background-image: url(bg.png);
@@ -10,13 +12,13 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: 'Courier New', Courier, monospace'
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 
 }
 
 .flex-container{
     display: flex;
-    width: 90vw;
+    width: 93vw;
     /* border: 3px solid rgb(53, 53, 53); */
     margin: 20px auto;
     flex-direction: row;
@@ -34,25 +36,19 @@ body {
     font-size: 3rem;
     width: 289px;
     height: 289px;
-    /* border: 2px solid rgb(102, 93, 93); */
     align-items: center;
     align-content: space-between;
-    /* padding-top: 30px ; */
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .box:hover{
-    
     background-image: url(bghover.png);
     background-size: cover;
-    transition: ease-in;
-    transition-duration: 0.8;
-
 }
+
 img {
     display: inline-block;
     width: 80%; 
-    /* position: absolute; */
 }
 
 #box1{
@@ -104,6 +100,24 @@ img {
     align-self: center;
 }
 
+.pokeball{
+    border: 0px solid black;
+    width: 0px;
+    height: 0px;
+}
+
+.pokemon{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 0rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
 @media(max-width: 1200px) {
     .flex-container{
         width: 98vw;
@@ -117,21 +131,45 @@ img {
 
   @media(max-width: 1086px) {
     img {
-        display: inline-block;
-        width: 150px; 
+        display: flex;
+        width: 18%; 
     }
-
     .flex-container{
         display: flex;
         text-align: center;
         justify-content: center;
     }
-
     .box{
+        width: fit-content;
+        width: 30vw;
+        height: 20vw;
+        padding: 30px;
         display: flex;
-        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-content: center;
+        flex-direction: row;
         width: 1000px;
+       padding-right:40px ;
     }
+    .pokeball{
+        background-image: url(pokeball.png);
+        display: flex;
+        border: 0px solid black;
+        /* align-self: center; */
+        width: 15vw;
+        height: 15vw; 
+        background-position: center;
+        background-size: 60%;
+        background-repeat: no-repeat;
+    }
+    .pokemon{
+        width: 100px;
+        height: 20px;
+        font-size: 3rem;
+        font-weight: 550;
+    }
+    
+
   }
 
   @media(max-width: 700px) {
