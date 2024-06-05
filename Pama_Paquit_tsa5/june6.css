@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+img{
+    width: 200px;
+    filter: drop-shadow(3px 3px 4px black);
+}
+
+#lidia .main-profile, #lili .main-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+
+}
+
+
+.tkn-container{
+/* width: 95vw; */
+background-repeat: no-repeat;
+background-attachment: fixed;
+border: 3px solid darkblue;
+margin: 10px auto;
+display: grid;
+grid-template-columns: repeat(4, auto) ;
+grid-template-rows: repeat(4, auto) ;
+background-image: url(TekkenBG.png);
+}
+
+.name{
+    font-size: x-large;
+    font-weight: bolder;
+    font-style: oblique;
+    text-shadow: 2px 2px #eeeaea;
+}
+
+
+.box{
+    margin: 20px;
+    border: 5px solid darkred;
+    padding: 10px;  
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column ;
+
+}
+
+
+.flag{
+    width: 20px;
+}
+
+.lili{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#lili{
+    background-color: #994D52;
+
+}
+
+.alisa{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#alisa{
+    background-color: #678F8A;
+}
+
+.kazuya{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+#kazuya{
+    background-color: #7D829C;
+}
+
+#reina{
+    background-color: #BD9EE8;
+
+}
+
+.lidia{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+#lidia{
+    background-color: #7F273B;
+
+}
