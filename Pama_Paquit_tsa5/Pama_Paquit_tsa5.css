@@ -164,3 +164,40 @@ background-image: url(TekkenBG.png);
         align-items: center;
     }
 }
+
+@media (max-width: 550px){
+    #lili .main-profile, #alisa .main-profile, #kazuya .main-profile, #reina .main-profile, #lidia .main-profile{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .tkn-container{
+        grid-template-columns: 1fr;
+    }
+
+    #lili{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
+    }
+    #alisa{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #kazuya{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #reina{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #lidia{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+}
