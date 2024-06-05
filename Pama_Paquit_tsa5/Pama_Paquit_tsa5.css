@@ -105,3 +105,37 @@ background-image: url(TekkenBG.png);
     background-color: #7F273B;
 
 }
+
+@media (max-width: 950px){
+    .tkn-container{
+        grid-template-columns: 1fr;
+    }
+
+    #lili{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
+    }
+    #alisa{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #kazuya{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #reina{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #lidia{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #lili .main-profile, #lidia  .main-profile{
+        flex-direction: column;
+    }
+    
+}
+
