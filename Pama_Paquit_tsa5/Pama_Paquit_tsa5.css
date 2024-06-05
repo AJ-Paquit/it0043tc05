@@ -26,16 +26,11 @@ grid-template-rows: repeat(2, 1fr) ;
 background-image: url(TekkenBG.png);
 }
 
-.main-profile{
-    /* margin-top: ; */
-}
 #lidia .main-profile, #lili .main-profile{
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 1.5;
-
-
 }
 
 #lidia .details, #lili .details{
@@ -68,6 +63,9 @@ background-image: url(TekkenBG.png);
 
 }
 
+.chara{
+    margin-bottom: 20px;
+}
 
 .flag{
     width: 20px;
@@ -75,7 +73,6 @@ background-image: url(TekkenBG.png);
 
 .details{
     margin-top: 20px;
-    /* width: 200px; */
     text-align: center;
 }
 .lili{
@@ -131,10 +128,10 @@ background-image: url(TekkenBG.png);
     background-color: #7F273B;
 
 }
-
 @media (max-width: 950px){
     .tkn-container{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     #lili{
@@ -162,5 +159,8 @@ background-image: url(TekkenBG.png);
     #lili .main-profile, #lidia  .main-profile{
         flex-direction: column;
     }
-    
+    .main-profile{
+        align-self: center;
+        align-items: center;
+    }
 }
