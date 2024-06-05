@@ -10,29 +10,44 @@
 }
 
 img{
-    width: 200px;
+    width: 150px;
     filter: drop-shadow(3px 3px 4px black);
 }
 
+.tkn-container{
+/* width: 95vw; */
+background-repeat: no-repeat;
+background-attachment: fixed;
+/* border: 3px solid darkblue; */
+/* margin: 10px auto; */
+display: grid;
+grid-template-columns: repeat(4, 1fr) ;
+grid-template-rows: repeat(2, 1fr) ;
+background-image: url(TekkenBG.png);
+}
+
+.main-profile{
+    /* margin-top: ; */
+}
 #lidia .main-profile, #lili .main-profile{
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 1.5;
 
+
 }
 
+#lidia .details, #lili .details{
+    display: flex;
+    align-self: center;
+    text-align:  center;
+    /* width: 500px; */
+}
 
-.tkn-container{
-/* width: 95vw; */
-background-repeat: no-repeat;
-background-attachment: fixed;
-border: 3px solid darkblue;
-margin: 10px auto;
-display: grid;
-grid-template-columns: repeat(4, auto) ;
-grid-template-rows: repeat(4, auto) ;
-background-image: url(TekkenBG.png);
+#kazuya .chara, #alisa .chara, #reina .chara{
+    display: flex;
+    justify-content: center;
 }
 
 .name{
@@ -58,6 +73,11 @@ background-image: url(TekkenBG.png);
     width: 20px;
 }
 
+.details{
+    margin-top: 20px;
+    /* width: 200px; */
+    text-align: center;
+}
 .lili{
     grid-row-start: 1;
     grid-row-end: 2;
@@ -90,6 +110,12 @@ background-image: url(TekkenBG.png);
     background-color: #7D829C;
 }
 
+.reina{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
 #reina{
     background-color: #BD9EE8;
 
@@ -138,4 +164,3 @@ background-image: url(TekkenBG.png);
     }
     
 }
-
