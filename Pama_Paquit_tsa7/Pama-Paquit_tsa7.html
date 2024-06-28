@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FlexBox Simulator</title>
+
+    <link rel="stylesheet" href="Pama_Paquit_tsa7.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="screen">
+
+        
+
+        <div class="calculator">
+
+            
+
+            <div class="calculator-screen" id="flexbox-container">
+
+                <div class="box" id="box1" id="1">1</div>
+
+                <div class="box" id="box2">2</div>
+
+                <div class="box" id="box3">3</div>
+
+            </div>
+
+
+
+            <div class="calculator-buttons">
+
+                
+
+                <div class="reset" id="reset">
+
+                    <button class="resetFlexbox" id="resetFlexbox">Reset Flexbox</button>
+
+                </div>
+
+
+
+                <div class="control-group" id="cg1">
+
+                    <div class="cg1-top">
+
+                        <label for="gap" class="mod-name" id="mod-name1">Gap</label>
+
+                        <input type="number" id="gap" value="0" class="gap-blank" min="0">
+
+                    </div>
+                  
+                    <div class="cg1-bottom">
+
+                        <label class="mod-name" id="mod-name2">Flex Direction</label>
+
+                        <button class="flex-direction" data-direction="row">Row</button>
+    
+                        <button class="flex-direction" data-direction="column">Column</button>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="control-group" id="cg2">
+
+                    <label class="mod-name" id="mod-name3">Justify Content</label>
+
+                    <button class="justify-content" data-justify="flex-start">Start</button>
+
+                    <button class="justify-content" data-justify="center">Center</button>
+
+                    <button class="justify-content" data-justify="flex-end">End</button>
+
+                    <button class="justify-content" data-justify="space-between">Space Between</button>
+
+                    <button class="justify-content" data-justify="space-around">Space Around</button>
+
+                    <button class="justify-content" data-justify="space-evenly">Space Evenly</button>
+
+                </div>
+
+
+
+                <div class="control-group" id="cg3">
+
+                    <label class="mod-name" id="mod-name4">Align Items</label>
+
+                    <button class="align-items" data-align="flex-start">Start</button>
+
+                    <button class="align-items" data-align="center">Center</button>
+
+                    <button class="align-items" data-align="flex-end">End</button>
+
+                </div>
+
+
+
+                <div class="control-group" id="cg4">
+
+                    <label class="mod-name" id="mod-name5">Flex Grow</label>
+
+                    <button id="growAll" class="grow-button">Grow All</button>
+
+                    <button id="resetGrow" class="grow-button">Reset</button>
+
+                    <div>
+
+                        <label for="box1Grow" class="grow-name">Box 1:</label>
+
+                        <input type="number" id="box1Grow" value="0" class="grow-blank">
+
+                    </div>
+
+                    <div>
+
+                        <label for="box2Grow" class="grow-name">Box 2:</label>
+
+                        <input type="number" id="box2Grow" value="0" class="grow-blank"> 
+
+                    </div>
+
+                    <div>
+
+                        <label for="box3Grow" class="grow-name">Box 3:</label>
+
+                        <input type="number" id="box3Grow" value="0" class="grow-blank">
+
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="Pama_Paquit_tsa7.js"></script>
+
+</body>
+
+</html>
