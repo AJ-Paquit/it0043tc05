@@ -1,0 +1,644 @@
+@font-face {
+    font-family: myFont;
+    src: url(SuperMario256.ttf);
+}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all ease;
+    transition-duration: 0.6s;
+    font-family: myFont;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.Navigation-Bar {
+    list-style-type: none;
+    background-color: red;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all ease;
+    transition-duration: 0.6s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    /* Adjust the height as needed */
+}
+
+.Navigation-Bar .pages,
+.logo {
+    list-style-type: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.Navigation-Bar .pages {
+    padding: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.Navigation-Bar .logo {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 10px;
+    /* Adjust the left padding if needed */
+}
+
+.Navigation-Bar .logo img {
+    height: 40px;
+    /* Adjust the height as needed */
+    margin-right: 5px;
+    /* Space between the logo and the text */
+}
+
+.Navigation-Bar a {
+    display: flex;
+    align-items: center;
+    /* Vertically centers the icon and text */
+    font-size: 1rem;
+    font-weight: 550;
+    color: white;
+    text-decoration: none;
+    padding: 15px 18px;
+    /* Reduce padding */
+}
+
+.Navigation-Bar a:hover {
+    background-color: #2a2929;
+}
+
+.Navigation-Bar h1 {
+    font-size: 1.5rem;
+    /* Adjust the font size */
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    /* Adjust padding */
+}
+
+.Navigation-Bar i {
+    margin-right: 10px;
+    /* Space between the icon and the text */
+}
+
+.Main-Content {
+    margin-top: 60px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 70vw 30vw;
+    overflow: hidden;
+}
+
+.Mariovid {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Left-Grid {
+    /* border: solid red 1px; */
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 23px, #252525 23px, #252525 46px);
+    background-color: #2a2929;
+    display: grid;
+    grid-template-columns: repeat(5, 18%);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.L-Screen {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: flex;
+    flex-direction: column;
+}
+
+.L-Screen-Bar {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.LSB-Item {
+    width: 33%;
+    padding: 10px;
+    text-align: center;
+    background-color: hsl(0, 0%, 25%);
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+
+.LSB-Item:hover {
+    background-color: red;
+}
+
+.L-Screen-Content {
+    /* border: solid red 1px; */
+    height: 100%;
+}
+
+.L-Itembox {
+    height: 280px;
+    /* border: solid red 1px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.L-Image {
+    /* border: solid red 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+}
+
+.L-Text {
+    /* border: solid red 1px; */
+    width: 100%;
+    height: 25%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: black 2px 2px 4px;
+}
+
+.Right-Grid {
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: repeat(4, 1fr);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 23px, #2a2529 23px, #2a2529 46px);
+    background-color: #e71a18;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    /* margin-right: 15px; */
+}
+
+.R-Screen {
+    height: 108%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.R-Screen-Content {
+    /* border: solid green 1px; */
+    background-color: #252525;
+    ;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+    height: 92%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* border: solid green 1px; */
+}
+
+.RSC-Header {
+    /* border: solid green 1px; */
+    display: flex;
+}
+
+.RSC-Content {
+    /* border: solid green 1px; */
+    margin: 15px;
+    font-size: 100%;
+}
+
+.R-Screen-Content img {
+    margin-right: 1px;
+    /* Space between image and text */
+}
+
+.R-Screen-Content h1 {
+    padding-top: 70px;
+    font-size: 2.rem;
+    /* Adjust font size */
+    margin-right: 0;
+    /* Remove default margin */
+}
+
+.R-Itembox {
+    /* border: solid red 1px; */
+    display: flex;
+    height: 300px;
+    border-radius: 20px;
+    /* object-fit: cover; */
+}
+
+.R-Itembox img {
+    max-width: 400px;
+    max-height: 400px;
+    padding: 0px;
+    /* border: solid green 1px; */
+    border-radius: 37px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.R-Itembox a{
+    max-width: 400px;
+    max-height: 400px;
+    padding: 0px;
+    /* border: solid green 1px; */
+    border-radius: 37px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#L-1 {
+    background-color: #e71a18;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#L-2 {
+    background-color: #3bad35;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#L-3 {
+    background-color: #ff6a9b;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#L-4 {
+    background-color: #1b19f8;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#L-5 {
+    background-color: #febe2c;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#L-6 {
+    background-color: #63e353;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#L-7 {
+    background-color: #ff7e38;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#L-8 {
+    background-color: #ffdb00;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#L-9 {
+    background-color: #873cd0;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#L-10 {
+    background-color: #a2f6eb;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#L-1:hover,
+#L-2:hover,
+#L-3:hover,
+#L-4:hover,
+#L-5:hover,
+#L-6:hover,
+#L-7:hover,
+#L-8:hover,
+#L-9:hover,
+#L-10:hover {
+    background-color: #252525;
+    transform: scale(1.35);
+    box-shadow: white 3px 3px 3px;
+}
+
+#R-1 {
+    background-color: #252525;
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#R-2 {
+    background-color: #252525;
+
+    border-radius: 11% 11% 11% 11% / 11% 11% 11% 11%;
+}
+
+#R-1:hover,
+#R-2:hover {
+    background-color: #252525;
+    transform: rotate(30deg);
+    box-shadow: white 5px 5px 5px;
+}
+
+.text:hover{
+    transform: scale(1.1);
+    text-shadow: #3bad35 3px 3px 3px;
+    
+}
+
+.text-1:hover{
+    transform: scale(1.5);
+    text-shadow: #e71a18 3px 3px 3px;
+    
+}
+@media (max-width: 1175px) {
+
+    img {
+        max-width: 140px;
+        max-height: 140px;
+        object-fit: contain;
+    }
+
+    .Navigation-Bar {
+        justify-content: start;
+    }
+
+    .Navigation-Bar .logo {
+        width: 40%;
+    }
+
+    .Navigation-Bar .pages {
+        padding: 0;
+        width: 50%;
+    }
+
+    .Navigation-Bar a {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .Navigation-Bar h1 {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+
+    .Main-Content {
+        display: grid;
+        grid-template-columns: 60vw 40vw;
+        height: 100%;
+        margin-top: 60px;
+    }
+
+    .Left-Grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 400px repeat(4, 230px);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .L-Screen {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .L-Itembox {
+        height: 230px;
+    }
+
+    .L-Text {
+        font-size: 1rem;
+    }
+
+    .L-Screen-Bar {
+        width: 80%;
+    }
+
+    #L-10 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .Right-Grid {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+
+    .R-Screen-Content h1 {
+        padding-top: 70px;
+        font-size: 1.6rem;
+        /* Adjust font size */
+        margin-right: 0;
+        /* Remove default margin */
+    }
+}
+
+@media(max-width: 760px) {
+    img {
+        max-width: 190px;
+        max-height: 190px;
+        object-fit: contain;
+    }
+
+    .Navigation-Bar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    .Navigation-Bar .pages {
+        /* border: solid green 1px; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Navigation-Bar .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Navigation-Bar h1 {
+        width: 100%;
+        flex-grow: 2;
+        font-size: 2rem;
+        padding: 10px;
+        padding-top: 20px;
+        /* padding-left: 200px; */
+    }
+
+    .Navigation-Bar img{
+        /* width: 200px; */
+        /* height: 200px; */
+        padding: 0px;
+        margin: 0px;
+        padding-top: 10px;
+    }
+
+    .Navigation-Bar a {
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+
+    .Main-Content {
+        margin-top: 100px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .Left-Grid {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 400px repeat(4, 300px);
+    }
+
+    .L-Screen {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .L-Itembox {
+        height: 300px;
+    }
+
+    #L-1 {
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #L-2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #L-3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #L-4 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #L-5 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    #L-6 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    #L-7 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    #L-8 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    #L-9 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    #L-10 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    .L-Screen-Bar {
+        width: 80%;
+    }
+
+    .LSB-Item {
+        font-size: 0.8rem;
+    }
+
+    .Right-Grid {
+        /* border: solid green 1px; */
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+   
+        padding-top: 50px;
+        display: grid;
+        grid-template-rows: 300px 3repeat(4, 1fr);
+        /* gap: 0px; */
+    }
+
+    .R-Screen {
+        height: 108%;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .R-Itembox img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 37px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .R-Itembox a{
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0px;
+        border-radius: 37px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
