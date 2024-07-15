@@ -1,0 +1,823 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all ease;
+    transition-duration: 0.6s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Navigation-Bar {
+    /* border: solid red 1px; */
+    list-style-type: none;
+    height: 100px;
+    background: linear-gradient(to right, #E1D7C6, #E7D4B5);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all ease;
+    transition-duration: 0.6s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+}
+
+.Navigation-Bar .Pages,
+.Logo {
+    list-style-type: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.Navigation-Bar .Pages {
+    /* border: solid red 1px; */
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 2%;
+    background-color: #333333;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.Navigation-Bar .Logo {
+    /* border: solid red 1px; */
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 1vw;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    background-color: #333333;
+    border-radius: 20px 0px 0px 20px;
+    gap: 20px;
+}
+
+.Navigation-Bar a {
+    /* border: solid red 1px; */
+    height: 100%;
+    width: 9vw;
+    display: flex;
+    align-items: center;
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    font-weight: 550;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+}
+
+.Navigation-Bar a:hover {
+    background-color: #898787;
+}
+
+.Navigation-Bar h1 {
+    /* border: solid red 1px;*/
+    font-size: 200%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.Main-Content {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.Home,
+.About,
+.Portfolio,
+.Contact,
+.Socials,
+.FAQ {
+    /* border: solid red 1px; */
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(MainBG.jpg);
+}
+
+.Portfolio {
+    height: 100vh;
+}
+
+.C-Home,
+.C-About,
+.C-Portfolio,
+.C-Contact,
+.C-Socials,
+.C-FAQ {
+    /* border: solid red 1px; */
+    width: 98%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.C-Home {
+    flex-direction: row;
+}
+
+.Home-Text {
+    /* border: solid red 1px; */
+    text-align: end;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 50%;
+}
+
+.Home-Greeting {
+    font-size: 3rem;
+}
+
+.Home-Name {
+    font-size: 6rem;
+}
+
+.Home-Body {
+    /* border: solid red 1px; */
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home-Body img {
+    width: 100%;
+    height: 70%;
+    border: solid 20px #E1D7C6;
+    object-fit: cover;
+    border-radius: 0px 60px 0px 60px;
+}
+
+.About-Me {
+    /* border: solid red 1px; */
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: 800;
+    height: 10%;
+}
+
+.About-Body {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.About-Pics {
+    /* border: solid red 1px; */
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.About-Pics img {
+    width: 46%;
+    height: 46%;
+    object-fit: cover;
+    border: solid 8px #E1D7C6;
+}
+
+.About-Details {
+    /* border: solid red 1px; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.AD-Text {
+    padding: 40px;
+    height: 80%;
+    font-size: 2rem;
+    background-color: #333333;
+    color: white;
+    border-radius: 100px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.Portfolio-Works {
+    /* border: solid red 1px; */
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.Portfolio-Body {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+}
+
+.PB {
+    /* border: solid red 1px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.PB-Pic {
+    /* border: solid red 1px; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    border-radius: 20px 20px 0px 0px;
+    justify-content: center;
+    background: linear-gradient(45deg, #ff3584, #ffa07a);
+    border: solid 8px #E1D7C6;
+    overflow: hidden;
+}
+
+.PB-Pic img {
+    /* border: solid red 1px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.PB-Text {
+    width: 100%;
+    height: 20%;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 0px 0px 20px 20px;
+    border: solid 8px #E1D7C6;
+}
+
+.PB-Text a {
+    /* border: solid red 1px; */
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+}
+
+.PB-Text a:hover {
+    background-color: gray;
+}
+
+.Socials-Follow {
+    /* border: solid red 1px; */
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.Socials-Body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.SB {
+    /* border: solid red 1px; */
+    width: 27%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.SB-Pic {
+    /* border: solid red 1px; */
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.SB-Pic img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.SB-Pic a,
+.PB-Pic a {
+    /* border: solid red 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.SB-Text {
+    /* border: solid red 1px; */
+    width: 100%;
+    height: 20%;
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.SB-Text a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+    background-color: black;
+}
+
+.FAQ-Who {
+    /* border: solid red 1px; */
+    height: 10%;
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.FAQ-Body {
+    /* border: solid red 1px; */
+    height: 90%;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.FAQ-Pic {
+    /* border: solid red 1px; */
+    width: 25%;
+}
+
+.FAQ-Pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.FAQ-Text {
+    /* border: solid red 1px; */
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.FT1 {
+    /* border: solid red 1px; */
+    height: 34%;
+    padding: 20px;
+    background-color: #43766C;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FT2 {
+    /* border: solid red 1px;    */
+    height: 32%;
+    padding: 20px;
+    background-color: #F8FAE5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.C-Contact {
+    flex-direction: row;
+}
+
+.Contact-Me {
+    /* border: solid red 1px; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+    gap: 10px;
+    padding: 10px;
+}
+
+.CM-Header {
+    /* border: solid red 1px;s */
+    font-size: 5rem;
+}
+
+.CM-Body {
+    /* border: solid red 1px; */
+    font-size: 2.5rem;
+}
+
+.Contact-Body {
+    /* border: solid red 1px; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+    font-size: 2rem;
+}
+
+.Contact-Body form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Contact-Body #name,
+.Contact-Body #email {
+    /* border: solid red 1px; */
+    width: 60%;
+    height: 80px;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
+
+.Contact-Body #submit {
+    /* border: solid red 1px; */
+    width: 30%;
+    height: 80px;
+    background-color: #333333;
+    font-size: 2rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+.textContent {
+    font-size: 0.5rem;
+}
+
+@media(max-width: 1250px) {
+
+    .PB-Pic img {
+        height: 80%;
+    }
+
+    .Contact-Body #name,
+    .Contact-Body #email {
+        width: 70%;
+        height: 80px;
+    }
+
+    .SB {
+        width: 31%;
+    }
+}
+
+@media(max-width: 1000px) {
+
+    .Navigation-Bar .Pages {
+        width: 70%;
+    }
+
+    .Navigation-Bar .Logo {
+        width: 30%;
+    }
+
+    .Navigation-Bar a {
+        width: 10.5vw;
+    }
+
+    .Navigation-Bar h1 {
+        font-size: 170%;
+    }
+
+    .Home-Name {
+        font-size: 5rem;
+    }
+
+    .Home-Greeting {
+        font-size: 2.5rem;
+    }
+
+    .Home-Body img {
+        width: 90%;
+        height: 60%;
+        padding: 0px;
+    }
+
+    .Home-Text {
+        gap: 10px;
+    }
+
+    .AD-Text {
+        height: 100%;
+        padding: 20px;
+        font-size: 1.7rem;
+    }
+
+    .PB-Text {
+        font-size: 1.5rem;
+    }
+
+    .PB-Pic img {
+        height: 60%;
+    }
+
+    .SB {
+        width: 30vw;
+    }
+
+    .FT1,
+    .FT2 {
+        font-size: 1.3rem;
+    }
+
+    .FAQ-Pic img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Contact-Body {
+        padding: 10px;
+    }
+
+    .Contact-Body #name,
+    .Contact-Body #email {
+        width: 90%;
+        height: 60px;
+    }
+
+    .Contact-Body #submit {
+        width: 50%;
+        height: 60px;
+    }
+
+    .CM-Header {
+        font-size: 4rem;
+    }
+
+    .CM-Body {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 750px) {
+
+
+    .Navigation-Bar h1 {
+        font-size: 130%;
+    }
+
+    .Home-Name {
+        font-size: 3.7rem;
+    }
+
+    .Home-Greeting {
+        font-size: 1.6rem;
+    }
+
+    .Home-Text {
+        padding-right: 0px;
+    }
+
+    .AD-Text {
+        font-size: 1.4rem;
+    }
+
+    .Portfolio,
+    .Socials {
+        height: 150vh;
+    }
+
+    .Portfolio-Body {
+        flex-direction: column;
+    }
+
+    .PB {
+        height: 30%;
+    }
+
+    .PB-Pic img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .PB-Text {
+        font-size: 1.7rem;
+    }
+
+    .Socials {
+        height: 90vh;
+    }
+
+    .Socials-Body {
+        flex-wrap: wrap;
+
+    }
+
+    .SB {
+        width: 47%;
+        height: 48%;
+    }
+
+    .FT1,
+    .FT2 {
+        font-size: 1.15rem;
+    }
+
+    .Contact-Body {
+        padding: 10px;
+    }
+
+    .Contact-Body #name,
+    .Contact-Body #email {
+        font-size: 1.2rem;
+    }
+
+    .Contact-Body #submit {
+        width: 50%;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .CM-Header {
+        font-size: 4rem;
+    }
+
+    .CM-Body {
+        font-size: 2rem;
+    }
+
+    .Contact-Me {
+        width: 45%;
+    }
+
+    .Contact-Body {
+        width: 55%;
+    }
+}
+
+@media(max-width: 550px) {
+
+    .Navigation-Bar {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .Navigation-Bar .Pages,
+    .Navigation-Bar .Logo {
+        width: 100%;
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Navigation-Bar a {
+        padding: 0px;
+        margin: 0px;
+        font-size: 0.8rem;
+        width: 16vw;
+    }
+
+    .Navigation-Bar h1 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 2.6rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .C-Home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Home-Text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Home-Greeting {
+        font-size: 2rem;
+    }
+
+    .Home-Name {
+        font-size: 4rem;
+    }
+
+    .Home-Body {
+        width: 100%;
+        height: 60%;
+    }
+
+    .Home-Body img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .About-Me {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .About-Body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .About-Details {
+        height: 40%;
+        width: 100%;
+    }
+
+    .AD-Text {
+        border-radius: 60px 0px 60px 0px;
+        font-size: 1.46rem;
+    }
+
+    .About-Pics {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Portfolio-Works {
+        text-align: center;
+    }
+
+    .FAQ-Body {
+        gap: 5px;
+    }
+
+    .FT1,
+    .FT2 {
+        font-size: 1rem;
+    }
+
+    .C-Contact {
+        flex-direction: column;
+    }
+
+    .Contact-Me,
+    .Contact-Body {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Contact-Me {
+        justify-content: end;
+        padding-bottom: 20px;
+    }
+
+    .Contact-Body {
+        padding: 0px;
+        margin: 0px;
+        justify-content: start;
+        padding-bottom: 200px;
+    }
+
+    .Contact-Body form {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+}
