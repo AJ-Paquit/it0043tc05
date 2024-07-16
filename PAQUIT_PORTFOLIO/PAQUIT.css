@@ -754,6 +754,10 @@
         height: 100%;
     }
 
+    .About{
+        height: 120vh;
+    }
+
     .About-Me {
         padding: 10px;
         text-align: center;
